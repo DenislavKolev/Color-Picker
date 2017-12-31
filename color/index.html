@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Color Picker</title>
+    <script  src = "https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" > </script>
+    <script src="js/color.js"></script>
+    <link rel="stylesheet" href="css/color.css">
+</head>
+<body>
+<header>
+    <h1>Colors</h1>
+</header>
+
+<main>
+    <section>
+        <h4>Избери наситеност на червеното</h4>
+        <div>
+            <input type = "range" min = '0' max = '255'  id = "red"/>
+        </div>
+        <div >128</div>
+    </section>
+
+    <section>
+        <h4>Избери наситеност на зеленото</h4>
+        <div>
+            <input type = "range" min = '0' max = '255'  id = 'green'/>
+        </div>
+        <div id = "secondVal">128</div>
+    </section>
+
+    <section>
+        <h4>Избери наситеност на синьото</h4>
+        <div>
+            <input type = "range" min = '0' max = '255'  id = 'blue'/>
+        </div>
+        <div id = 'thirdVal'>128</div>
+    </section>
+
+</main>
+<footer>
+    <div id="valueRGB">Color code: rgb(128,128,128)</div>
+    <div id="filled"></div>
+    <div>
+        <h1>Избери цвят на заглавието</h1>
+        <div><input type = "color" id = "select"/></div>
+        <div><input type = "submit" value = "Цък" id = 'click'></div>
+    </div>
+</footer>
+
+</body>
+</html>
